@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>painter</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/canvas_painter.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="sidebar">
+      <header><i class="fa fa-fort-awesome fa-2x" id="header" aria-hidden="true"></i></header>
+      <div class="sidebar-body">
+        <div class="sidebar-body-wrap">
+          <div class="sidebar-body-child tool">
+            <div class="button-wrap tool-child">
+              <div class="button-tool" id="pen"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+            </div>
+            <div class="button-wrap tool-child">
+              <div class="button-tool" id="eraser"><i class="fa fa-eraser" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="sidebar-body-child point">
+            <div class="button-wrap point-child">
+              <div class="button-point" id="1x">Ⅰ</div>
+            </div>
+            <div class="button-wrap point-child">
+              <div class="button-point" id="2x">Ⅱ</div>
+            </div>
+            <div class="button-wrap point-child">
+              <div class="button-point" id="4x">Ⅳ</div>
+            </div>
+            <div class="button-wrap point-child">
+              <div class="button-point" id="6x">Ⅶ</div>
+            </div>
+          </div>
+          <div class="sidebar-body-child color">
+            <div class="button-wrap color-child">
+              <div class="button-color" id="red" style="background-color: red"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="orange" style="background-color: orange"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="yellow" style="background-color: yellow"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="green" style="background-color: green"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="cyan" style="background-color: cyan"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="blue" style="background-color: blue"></div>
+            </div>
+            <div class="button-wrap color-child">
+              <div class="button-color" id="purple" style="background-color: purple"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-child">
+          <div class="footer-button" id="clear" title="clear"><i class="fa fa-trash" aria-hidden="true"></i></div>
+        </div>
+        <div class="footer-child">
+          <div class="footer-button" id="save" title="save"><i class="fa fa-check" aria-hidden="true"></i></div>
+        </div>
+      </footer>
+    </div>
+    <div class="body">
+      <canvas id="canvas">您的浏览器不支持canvas</canvas>
+      <canvas id="canvas-over"></canvas>
+    </div>
+  </div>
+  <script src="../js/canvas_painter.js"></script></body>
+</html>

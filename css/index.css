@@ -1,0 +1,21 @@
+html, body { padding: 0; margin: 0; font-family: '微软雅黑' }
+p { margin: 0; }
+a { text-decoration: none; }
+hr { margin-top: 40px; margin-bottom: 20px; border: none; border-bottom: 1px solid #e9e9e9; }
+  .main { width: 55%; height: auto; padding: 20px; margin-top: 15px; margin-left: auto; margin-right: auto; border: 1px solid #e9e9e9; border-radius: 4px; box-sizing: border-box; }
+    .main header { display: flex; width: 100%; height: 120px; }
+      .header-img { width: 120px; height: 100%; border-radius: 10px; overflow: hidden; }
+        .header-img img { width: 100%; height: 100%; }
+      .header-content { width: calc(100% - 120px); height: 100%; padding-left: 45px; box-sizing: border-box; }
+        .header-content-describe { width: 100%; height: 60%; }
+          .header-content-describe-name { font-size: 25px; color: #737373; }
+          .header-content-describe-content { margin-top: 20px; font-size: 12px; color: #989898; }
+        .header-content-link { display: flex; align-items: flex-end; width: 100%; height: 40%; }
+          .link { margin-right: 10px; color: #72adda; font-size: 15px; }
+          .link:hover { color: #3b8ece; }
+    .example {}
+    .example-title { color: #897474; font-size: 17px; }
+    .example-link { display: flex; align-items: center; width: 100%; height: 30px; padding-left: 70px;  }
+      .example-link a { color: #72adda; font-size: 15px; }
+      .example-link a:hover { color: #3b8ece; }
+    .main footer { display: flex; justify-content: center; align-items: center; width: 100%; height: 30px; color: #999998; font-size: 12px; }
