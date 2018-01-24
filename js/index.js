@@ -39,6 +39,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   for (let i in ball) {
     ctx.beginPath()
+    ctx.fillStyle = '#d8d8d8'
     ctx.arc(ball[i].x, ball[i].y, ball[i].r, 0, 2*Math.PI)
     ctx.fill()
     ctx.closePath()
@@ -51,7 +52,5 @@ window.onresize = () => {
   canvas.width = document.body.clientWidth - 4
   canvas.height = document.body.clientHeight - 4
 }
-
-ctx.fillStyle = '#d8d8d8'
 
 window.requestAnimationFrame(draw)
