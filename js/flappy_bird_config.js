@@ -270,7 +270,7 @@ let pipe = {
         this.pipe_up.x -= this.speed
         this.pipe_down.x -= this.speed
       } else {
-        this.value++
+        score.value++
         this.state = false
         this.pipe_up.x = canvas.width
         this.pipe_down.x = canvas.width
@@ -326,7 +326,7 @@ let bird = {
     this.state_menu = 0
     this.y = canvas.height/2 - 35
 
-    this.value = 0
+    score.value = 0
   },
   fly_menu: function () {
     if (this.state_menu) {
