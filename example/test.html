@@ -10,8 +10,10 @@
   </style>
 </head>
 <body>
+  <p>test</p>
   <canvas id="canvas" width="800" height="800" style="display:block;"></canvas>
-  <script type="text/javascript">    
+  <p>test</p>
+  <script type="text/javascript">
   let canvas = document.getElementById('canvas')
   let ctx = canvas.getContext('2d')
   let ball = []
@@ -50,21 +52,15 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     for (let i in ball) {
       ctx.beginPath()
-      ctx.fillStyle = '#d8d8d8'
+      ctx.fillStyle = '#333'
       ctx.arc(ball[i].x, ball[i].y, ball[i].r, 0, 2*Math.PI)
       ctx.fill()
       ctx.closePath()
       ball[i].process()
     }
-    window.requestAnimationFrame(draw)
   }
 
-  window.onresize = () => {
-    canvas.width = document.body.clientWidth - 4
-    canvas.height = document.body.clientHeight - 4
-  }
-
-  window.requestAnimationFrame(draw)
+  draw()
 </script>
 </body>
 </html>
