@@ -11,6 +11,7 @@
 </head>
 <body>
   <p>test</p>
+  <p id='hhh'></p>
   <canvas id="canvas" width="800" height="800" style="display:block;"></canvas>
   <p>test</p>
   <script type="text/javascript">
@@ -21,6 +22,9 @@
   function randomBall(x, y) {
     return Math.random() * (y - x) + x
   }
+
+  let hhh = document.getElementById('hhh')
+  hhh.innerText = randomBall(1, 10)
 
   for (let i = 0; i < 7; i++) {
     ball[i] = {
@@ -46,10 +50,12 @@
                   }
                }
     }
+    alert(i)
   }
 
   function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    alert('draw')
+    // ctx.clearRect(0, 0, canvas.width, canvas.height)
     for (let i in ball) {
       ctx.beginPath()
       ctx.fillStyle = '#333'
@@ -58,6 +64,7 @@
       ctx.closePath()
       ball[i].process()
     }
+    alert('drawEnd')
   }
 
   draw()
