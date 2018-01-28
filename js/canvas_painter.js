@@ -1,9 +1,9 @@
 //画布1
-let canvas = document.getElementById('canvas')
+let canvas = document.getElementById('Canvas')
 let ctx = canvas.getContext('2d')
 
 //画布2
-let canvas_over = document.getElementById('canvas-over')
+let canvas_over = document.getElementById('Canvas-over')
 let ctx_over = canvas_over.getContext('2d')
 
 //画布配置

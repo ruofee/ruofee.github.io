@@ -116,11 +116,11 @@ html, body {
       width: 1065px;
       height: 100%;
     }
-      #canvas {
+      #Canvas {
         border: 1px solid #c5c5c5;
         box-shadow: 8px 8px 5px #c5c5c5;
         z-index: 12
       }
-      #canvas-over {
+      #Canvas-over {
         position: absolute;
       }
