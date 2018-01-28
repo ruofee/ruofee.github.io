@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>zzz</title>
-  <style>
-    #canvas {
-      border: 1px solid #333;
-    }
-  </style>
+  <title>aaa</title>
 </head>
 <body>
-  <canvas id="canvas" width="800" height="800" style="display:block;"></canvas>
+  <canvas id="myCanvas" width="800" height="800" style="display:block;"></canvas>
   <script type="text/javascript">
-  let canvas = document.getElementById('canvas')
-  let ctx = canvas.getContext('2d')
+  let canvas = document.getElementById('myCanvas');
+  let ctx = canvas.getContext('2d');
 
   ctx.beginPath();
   ctx.moveTo(0,0);
@@ -21,7 +16,7 @@
   ctx.lineWidth=2;
   ctx.strokeStyle= "#ff0000"; 
   ctx.stroke();
-
+  ctx.closePath();
 </script>
 </body>
 </html>
