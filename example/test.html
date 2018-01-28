@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="">
+  <meta name="apple-mobile-web-app-title" content="标题">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Document</title>
   <style>
     #canvas {
@@ -50,11 +54,9 @@
                   }
                }
     }
-    alert(i)
   }
 
   function draw() {
-    alert('draw')
     // ctx.clearRect(0, 0, canvas.width, canvas.height)
     for (let i in ball) {
       ctx.beginPath()
@@ -64,7 +66,6 @@
       ctx.closePath()
       ball[i].process()
     }
-    alert('drawEnd')
   }
 
   draw()
