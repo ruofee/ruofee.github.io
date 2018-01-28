@@ -54,7 +54,9 @@ function draw() {
     ctx.closePath()
     ball[i].process()
   }
-  window.requestAnimationFrame(draw)
+  setTimeout(() => {
+    draw()
+  }, 10)
 }
 
 window.onresize = () => {
@@ -62,7 +64,9 @@ window.onresize = () => {
   canvas.height = document.body.clientHeight - 4
 }
 
-window.requestAnimationFrame(draw)
+  setTimeout(() => {
+    draw()
+  }, 10)
   </script>
 </body>
 </html>
