@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-title" content="标题">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Document</title>
+  <title>hhh</title>
   <style>
     #canvas {
       border: 1px solid #333;
@@ -14,18 +14,24 @@
   </style>
 </head>
 <body>
-  <p>test</p>
-  <p id='hhh'></p>
+  <p>ttt</p>
   <canvas id="canvas" width="800" height="800" style="display:block;"></canvas>
   <p>test</p>
   <script type="text/javascript">
   let canvas = document.getElementById('canvas')
   let ctx = canvas.getContext('2d')
-  
+
   let ball = [
-    { x: 100, y: 100, r: 10 },
+    { x: 0, y: 0, r: 30 },
     { x: 200, y: 300, r: 20 }
   ]
+
+  ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(400,400);
+    ctx.lineWidth=2;
+    ctx.strokeStyle= "#ff0000"; 
+    ctx.stroke();
 
   function draw() {
     for (let i in ball) {
