@@ -5,14 +5,14 @@
   <title>Document</title>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <script>
-    let canvas = document.getElementById('canvas')
+  <canvas id="canvas" width="800" height="800" style="display:block;"></canvas>
+  <script type="text/javascript">    
+   let canvas = document.getElementById('canvas')
 let ctx = canvas.getContext('2d')
 let ball = []
 
-canvas.width = document.body.clientWidth - 4
-canvas.height = document.body.clientHeight - 4
+canvas.width = 800
+canvas.height = 800
 
 function randomBall(x, y) {
   return Math.random() * (y - x) + x
@@ -54,9 +54,7 @@ function draw() {
     ctx.closePath()
     ball[i].process()
   }
-  setTimeout(() => {
-    draw()
-  }, 10)
+  window.requestAnimationFrame(draw)
 }
 
 window.onresize = () => {
@@ -64,9 +62,7 @@ window.onresize = () => {
   canvas.height = document.body.clientHeight - 4
 }
 
-  setTimeout(() => {
-    draw()
-  }, 10)
-  </script>
+window.requestAnimationFrame(draw)
+</script>
 </body>
 </html>
