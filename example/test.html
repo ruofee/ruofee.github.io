@@ -21,50 +21,19 @@
   <script type="text/javascript">
   let canvas = document.getElementById('canvas')
   let ctx = canvas.getContext('2d')
-  let ball = []
-
-  function randomBall(x, y) {
-    return Math.random() * (y - x) + x
-  }
-
-  let hhh = document.getElementById('hhh')
-  hhh.innerText = randomBall(1, 10)
-
-  for (let i = 0; i < 7; i++) {
-    ball[i] = {
-      x: randomBall(0, canvas.width),
-      y: randomBall(0, canvas.height),
-      speedX: randomBall(-5, 5),
-      speedY: randomBall(-5, 5),
-      r: randomBall(10, 30),
-      process: function () {
-                  if (this.x < canvas.width && this.x > 0 && this.y < canvas.height && this.y > 0) {
-                    this.x = this.x + this.speedX
-                    this.y = this.y + this.speedY
-                  } else {
-                    if (this.x < 0 || this.x > canvas.width) {
-                      this.speedX = -this.speedX
-                      this.x = this.x + this.speedX
-                      this.y = this.y + this.speedY
-                    } else {
-                      this.speedY = -this.speedY
-                      this.x = this.x + this.speedX
-                      this.y = this.y + this.speedY
-                    }
-                  }
-               }
-    }
-  }
+  
+  let ball = [
+    { x: 100, y: 100, r: 10 },
+    { x: 200, y: 300, r: 20 }
+  ]
 
   function draw() {
-    // ctx.clearRect(0, 0, canvas.width, canvas.height)
     for (let i in ball) {
       ctx.beginPath()
       ctx.fillStyle = '#333'
       ctx.arc(ball[i].x, ball[i].y, ball[i].r, 0, 2*Math.PI)
       ctx.fill()
       ctx.closePath()
-      ball[i].process()
     }
   }
 
