@@ -1,4 +1,4 @@
-let canvas = document.getElementById('canvas')
+let canvas = document.getElementById('Canvas')
 let ctx = canvas.getContext('2d')
 
 let game = {
