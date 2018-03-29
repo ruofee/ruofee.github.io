@@ -1,11 +1,11 @@
-let canvas = new Canvas(300, 400)
-let city = new City(canvas.width, canvas.height/2, '../image/firework/city.png')
-let night = new Night(canvas.width, canvas.height)
-let star = new Star(canvas.width, canvas.height, 50)
+let objCanvas = new Canvas(300, 400)
+let city = new City(objCanvas.width, objCanvas.height/2, '../image/firework/city.png')
+let night = new Night(objCanvas.width, objCanvas.height)
+let star = new Star(objCanvas.width, objCanvas.height, 50)
 let fireworks = []
 
-myCanvas.width = canvas.width
-myCanvas.height = canvas.height
+myCanvas.width = objCanvas.width
+myCanvas.height = objCanvas.height
 
 
 
@@ -21,14 +21,14 @@ myCanvas.onclick = (e) => {
     case 4: color = '#d215bb'
     break
   }
-  let firework = new Firework(canvas.width/2 - 1, canvas.height, e.pageX - myCanvas.offsetLeft, e.pageY - myCanvas.offsetTop, color, 5)
+  let firework = new Firework(objCanvas.width/2 - 1, objCanvas.height, e.pageX - myCanvas.offsetLeft, e.pageY - myCanvas.offsetTop, color, 5)
   fireworks.push(firework)
 }
 
 star.initialization()
 
 function index() {
-  // ctx.clearRect(0, 0, canvas.width, canvas.height)
+  // ctx.clearRect(0, 0, objCanvas.width, objCanvas.height)
   night.draw()
   star.draw()
   city.draw()
