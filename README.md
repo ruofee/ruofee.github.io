@@ -10,4 +10,8 @@
 
 待解的小问题:
 
-- 之前没接触移动端, 这次试着在移动端打开烟花演示网页, 但是canvas完全显示不出来, 经过调试之后发现只要把canvas标签原来的id(myCanvas)换成mycanvas, my_Canvas, my_canvas就没问题, 完全不知道这算哪门子问题啊...
+- 之前没接触移动端, 这次试着在移动端打开烟花演示网页,
+
+  先是在chrome中使用移动端调试查看了, 显示正常
+
+  之后分别使用iphone6的safari, 微信端, UC打开演示网页, canvas完全显示不出来, 经过调试之后发现只要把canvas标签原来的id(myCanvas)换成mycanvas, my_Canvas, my_canvas, 然后js中节点查找id就显示正常, 完全不知道这算哪门子问题啊...js中节点查找class, 只要命名规范则显示正常

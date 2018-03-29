@@ -1,4 +1,4 @@
-let objCanvas = new Canvas(300, 400)
+let objCanvas = new Canvas(400, 600)
 let city = new City(objCanvas.width, objCanvas.height/2, '../image/firework/city.png')
 let night = new Night(objCanvas.width, objCanvas.height)
 let star = new Star(objCanvas.width, objCanvas.height, 50)
