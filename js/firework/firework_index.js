@@ -7,8 +7,6 @@ let fireworks = []
 myCanvas.width = objCanvas.width
 myCanvas.height = objCanvas.height
 
-
-
 myCanvas.onclick = (e) => {
   let color = parseInt(userRandom(1, 4.99999999))
   switch (color) {
