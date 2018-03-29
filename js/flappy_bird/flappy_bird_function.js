@@ -43,7 +43,7 @@ function draw() {
   window.requestAnimationFrame(draw)
 }
 
-canvas.onclick = () => {
+function clickEvent() {
   if (game.state == 0) {
     game.state = 1
     bird.state = 1
@@ -56,7 +56,7 @@ canvas.onclick = () => {
   }
 }
 
-document.onkeydown = (e) => {
+function keydownEvent(e) {
   if (e.keyCode == 32 && game.state == 0) {
     game.state = 1
     bird.state = 1
@@ -68,3 +68,7 @@ document.onkeydown = (e) => {
     bird.reload()
   }
 }
+
+canvas.onclick = clickEvent
+document.onkeydown = keydownEvent
+canvas.ontouchstart = clickEvent
