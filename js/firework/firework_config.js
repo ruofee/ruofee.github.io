@@ -1,4 +1,4 @@
-let myCanvas = document.getElementById('m_Canvas')
+let myCanvas = document.getElementById('m_canvas')
 let ctx = myCanvas.getContext('2d')
 
 function userRandom(min, max) {
