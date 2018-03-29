@@ -71,4 +71,4 @@ function keydownEvent(e) {
 
 canvas.onclick = clickEvent
 document.onkeydown = keydownEvent
-canvas.ontouchstart = clickEvent
+canvas.ontouchend = clickEvent

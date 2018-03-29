@@ -250,11 +250,11 @@ let pipe = {
     return Math.random() * (canvas.height - 60 - 230) + 230
   },
   pipe_up: {
-    x: canvas.width,
+    x: canvas.width + 500,
     y: 0
   },
   pipe_down: {
-    x: canvas.width,
+    x: canvas.width + 500,
     y: 0
   },
   draw: function (img1, img2) {
@@ -314,8 +314,8 @@ let bird = {
     game.state = 2
   },
   reload: function () {
-    pipe.pipe_up.x = canvas.width
-    pipe.pipe_down.x = canvas.width
+    pipe.pipe_up.x = canvas.width + 500
+    pipe.pipe_down.x = canvas.width + 500
     pipe.state = false
 
     land.load = true
