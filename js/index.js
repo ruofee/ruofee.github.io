@@ -54,3 +54,7 @@ window.onresize = () => {
 }
 
 window.requestAnimationFrame(draw)
+
+window.addEventListener('message', (e) => {
+  console.log(e.data)
+})
