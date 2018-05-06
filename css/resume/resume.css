@@ -1,7 +1,9 @@
 html, body { padding: 0; margin: 0; }
 body { font-family: Calibri,"方正兰亭黑"; --h_width: 30px; }
 a { text-decoration: none; }
-
+li {
+  margin: 3px 0;
+}
   .diy-h { display: flex; align-items: center; margin-bottom: 15px; }
     .h-radius { width: var(--h_width); height: var(--h_width); /*border-radius: var(--h_width);*/ background: #030303; }
     .h-title { width: calc(100% - var(--h_width)); margin-left: 10px; line-height: 28px; font-size: 20px; }
@@ -9,21 +11,21 @@ a { text-decoration: none; }
   .diy-bottom { margin-bottom: 55px; }
   .resume { width: var(--resume_width); margin: 0 auto; }
     .resume header { display: flex; flex-direction: var(--resume_direction); height: 200px; background: #030303; color: #fff; }
-      .header-information { display: flex; padding: 10px; box-sizing: border-box; }
+      .header-information { display: flex; align-items: center; padding: 10px; box-sizing: border-box; }
         .header-information a { color: #fff; }
       .header-left { flex-grow: 9; }
       .header-right { flex-grow: 1; }
         .header-ul-left { flex-grow: 1; box-sizing: border-box; }
         .header-ul-right { flex-grow: 8; box-sizing: border-box; }
-        .header-left .header-ul-left { display: var(--header_left_left_display); flex-grow: 1; padding-left: 10px; margin: 59px 0; }
-        .header-left .header-ul-right { flex-grow: 8; padding-left: 10px; font-size: var(--header_left_right_fontsize); margin: var(--header_left_right_margin) 0; }
-        .header-right .header-ul-left { display: var(--header_right_left_display); margin: 51px 0; }
-        .header-right .header-ul-right { padding-left: 10px; margin: var(--header_right_right_margin) 0; }
+        .header-left .header-ul-left { display: var(--header_left_left_display); flex-grow: 1; padding-left: 10px; }
+        .header-left .header-ul-right { flex-grow: 8; padding-left: 10px; font-size: var(--header_left_right_fontsize); }
+        .header-right .header-ul-left { display: var(--header_right_left_display); }
+        .header-right .header-ul-right { padding-left: 10px; }
           .header-ul-left li { text-align: center; }
         .header-information li { list-style: none; }
     .resume-body { display: flex; flex-direction: var(--resume_direction); height: 885px; font-size: 17px; }
-      .body-left { width: var(--body_width); margin-top: 70px; margin-bottom: 70px; padding-left: 20px; padding-right: 20px; border-right: var(--body_left_borderright); box-sizing: border-box; }
-      .body-right { width: var(--body_width); margin-top: 70px; margin-bottom: 70px; padding-left: 20px; padding-right: 20px; box-sizing: border-box; }
+      .body-left { width: var(--body_width); margin-top: 70px; margin-bottom: 25px; padding-left: 20px; padding-right: 20px; border-right: var(--body_left_borderright); box-sizing: border-box; }
+      .body-right { width: var(--body_width); margin-top: 70px; margin-bottom: 25px; padding-left: 20px; padding-right: 20px; box-sizing: border-box; }
 @media screen and (min-width: 800px) {
   body {
     --resume_width: 800px;
