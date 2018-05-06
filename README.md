@@ -1,5 +1,7 @@
 ## Welcome to Ruofee's GitHub Pages
 
+点击 [访问](https://ruofee.github.io)
+
 | 标题          |                                          |                                          |
 | ----------- | ---------------------------------------- | ---------------------------------------- |
 | canvas_像素小鸟 | [演示](https://ruofee.github.io/example/flappy_bird.html) | [查看代码](https://github.com/ruofee/canvas_flappy_bird) |
