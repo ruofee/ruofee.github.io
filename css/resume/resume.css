@@ -1,14 +1,16 @@
 html, body { padding: 0; margin: 0; }
 body { font-family: Calibri,"方正兰亭黑"; --h_width: 30px; }
-a { text-decoration: none; }
+a { text-decoration: none; color: #333; }
 li {
   margin: 3px 0;
 }
   .diy-h { display: flex; align-items: center; margin-bottom: 15px; }
     .h-radius { width: var(--h_width); height: var(--h_width); /*border-radius: var(--h_width);*/ background: #030303; }
-    .h-title { width: calc(100% - var(--h_width)); margin-left: 10px; line-height: 28px; font-size: 20px; }
+    .h-title { width: calc(100% - var(--h_width)); margin-left: 10px; line-height: 28px; font-weight: bold; font-size: 20px; }
       .h-title:after { content: ''; display: block; width: 100%; height: 2px; background: #2d2b2b;  }
-  .diy-bottom { margin-bottom: 55px; }
+  .diy-bottom { margin-bottom: 40px; }
+    .diy-bottom-link { font-weight: bold; }
+    .intro { font-size: 16px; color: #888; }
   .resume { width: var(--resume_width); margin: 0 auto; }
     .resume header { display: flex; flex-direction: var(--resume_direction); height: 200px; background: #030303; color: #fff; }
       .header-information { display: flex; align-items: center; padding: 10px; box-sizing: border-box; }
