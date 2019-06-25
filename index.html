@@ -2,38 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ruofee~</title>
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ruofee的主页</title>
+  <link rel="Shortcut Icon" href="./image/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div class="main">
-    <header>
-      <div class="header-img"><img src="./image/head_picture.jpg" alt="header-img"></div>
-      <div class="header-content">
-        <div class="header-content-describe">
-          <p class="header-content-describe-name">Ruofee</p>
-          <p class="header-content-describe-content">因为生活不检点沾染上了中二病</p>
+  <div id="app">
+    <div class="content">
+      <div class="img-wrap">
+        <img class="img" :src="user.img" alt="头像">
+      </div>
+      <div class="content-user">
+        <div class="info">
+          <h2 class="name">{{user.name}}</h2>
+          <p class="signature">{{user.signature}}</p>
         </div>
-        <div class="header-content-link">
-          <a href="http://ruofee.cn/" class="link">我的博客</a>
-          <a href="https://www.zhihu.com/people/chen-ruo-feng-e/activities" class="link">我的知乎</a>
-          <a href="https://github.com/ruofee" class="link">我的Github</a>
+        <div class="links">
+          <div class="link-wrap" v-for="link of links" :key="link.src">
+            <a class="link" :href="link.src" target="_blank" rel="noopener noreferrer">{{link.name}}</a>
+          </div>
         </div>
       </div>
-    </header>
-    <hr>
-    <div class="example">
-      <p class="example-title">example:</p>
-      <div class="example-link"><a href="./example/canvas_painter.html">canvas制作画图工具</a></div>
-      <div class="example-link"><a href="./example/flappy_bird.html">canvas小游戏 flappy bird</a></div>
-      <div class="example-link"><a href="./example/canvas_firework.html">canvas烟花</a></div>
-      <div class="example-link"><a href="./example/resume.html">个人简介</a></div>
     </div>
-    <hr>
-    <footer>2018~2019</footer>
   </div>
-  <canvas id="Canvas"></canvas>
-  <script src = './js/index.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
