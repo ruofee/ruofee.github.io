@@ -1,0 +1,21 @@
+{
+  "name": "ruofee.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "homepage:dev": "vite -c packages/HomePage/vite.config.js",
+    "homepage:build": "vite-ssg build -c packages/HomePage/vite.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "less": "^4.2.0",
+    "vite": "^5.3.1",
+    "vite-ssg": "^0.23.7",
+    "vue": "^3.4.29"
+  }
+}
