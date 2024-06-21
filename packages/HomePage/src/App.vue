@@ -1,4 +1,8 @@
-<script lang="ts" setup>
+<script setup>
+import { defineAsyncComponent } from 'vue'
+// import Pokemon from '@/components/Pokemon.vue'
+const Pokemon = defineAsyncComponent(() => import('@/components/Pokemon.vue'))
+
 const user = {
   name: 'Ruofee',
   img: 'https://picx.zhimg.com/v2-4c5ca22f5ccae388125dc991956ae1cd_xl.jpg?source=32738c0c',
@@ -39,12 +43,14 @@ const links = [
         </div>
       </div>
     </div>
+    <Pokemon />
   </div>
 </template>
 
 <style lang="less" scoped>
 .app {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;

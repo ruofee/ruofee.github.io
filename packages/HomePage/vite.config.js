@@ -15,4 +15,9 @@ export default defineConfig({
     outDir: rootDir,
     assetsDir: './assets-homepage',
   },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+    },
+  },
 })
