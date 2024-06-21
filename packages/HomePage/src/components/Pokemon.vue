@@ -18,7 +18,6 @@ const start = async () => {
   if (canvasRef.value) {
     canvasRef.value.appendChild(app.canvas)
 
-    arcanine.run()
     const switchFrequency = 4
     let elapsedTime = 0
     app.ticker.add(option => {
