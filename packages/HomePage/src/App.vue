@@ -1,6 +1,5 @@
 <script setup>
 import { defineAsyncComponent } from 'vue'
-// import Pokemon from '@/components/Pokemon.vue'
 const Pokemon = defineAsyncComponent(() => import('@/components/Pokemon.vue'))
 
 const user = {

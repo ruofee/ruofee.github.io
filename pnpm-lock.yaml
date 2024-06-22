@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@pixi/gif':
+    specifier: ^3.0.1
+    version: 3.0.1(pixi.js@8.2.0)
   '@vitejs/plugin-vue':
     specifier: ^5.0.5
     version: 5.0.5(vite@5.3.1)(vue@3.4.29)
   less:
     specifier: ^4.2.0
     version: 4.2.0
+  lodash.random:
+    specifier: ^3.2.0
+    version: 3.2.0
   pixi.js:
     specifier: ^8.2.0
     version: 8.2.0
@@ -266,6 +272,14 @@ packages:
 
   /@pixi/colord@2.9.6:
     resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==}
+    dev: true
+
+  /@pixi/gif@3.0.1(pixi.js@8.2.0):
+    resolution: {integrity: sha512-oGl0nkbFAe1vaRLyIvGbJc3fcIrS8vF1E00cwjiV+9f1pYe072D+yijJxHsgYnXs6jdzERh+D0MqSrEag0jRzg==}
+    peerDependencies:
+      pixi.js: ^8.0.0
+    dependencies:
+      pixi.js: 8.2.0
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.18.0:
@@ -903,6 +917,10 @@ packages:
       mime: 1.6.0
       needle: 3.3.1
       source-map: 0.6.1
+    dev: true
+
+  /lodash.random@3.2.0:
+    resolution: {integrity: sha512-A6Vn7teN0+qSnhOsE8yx2bGowCS1G7D9e5abq8VhwOP98YHS/KrGMf43yYxA05lvcvloT+W9Z2ffkSajFTcPUA==}
     dev: true
 
   /lower-case@1.1.4:
